@@ -1,5 +1,8 @@
 import NavBar from "../components/Navbar";
 import Image from "../assets/profile.png";
+/*
+  Can you replace the current profile image with an image of yourself?
+*/
 
 const HomePage = () => {
   return (
@@ -27,6 +30,10 @@ const HomePage = () => {
           <p className="text-gray-700 text-lg mt-4">
             Tell us more about yourself!
           </p>
+          {/*
+              TODO:
+              Create three paragraphs discussing anything about yourself!
+          */}
         </div>
       </div>
     </>
