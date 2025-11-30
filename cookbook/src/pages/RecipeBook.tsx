@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getAllRecipes, addRecipe, deleteRecipe, toggleRecipeFavorite } from '../mockData';
+import { getAllRecipes, addRecipe, deleteRecipe, toggleRecipeFavorite } from '../../mockData';
 import type { Recipe } from '../types/recipe';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
