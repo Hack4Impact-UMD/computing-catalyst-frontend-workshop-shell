@@ -14,7 +14,15 @@ const RecipeBook = () => {
   const [open, setOpen] = useState(false);
   const [showFavorites, setShowFavorites] = useState(false);
 
-  const visibleRecipes = showFavorites ? recipes.filter(r => r.isFavorite) : recipes;
+  {/* TASK 10 */
+      /*
+         visibleRecipes is INCORRECT. if we check the favorites button it should only show favorite
+         recipes, not all recipes. please fix visibleRecipes
+      */
+  }
+  //FIX VISIBLE RECIPES
+  const visibleRecipes = recipes;
+  
   const currentRecipe = visibleRecipes[currentIndex] || null;
 
   const handleDeleteRecipe = (recipe: Recipe) => {
