@@ -130,7 +130,7 @@ const RecipeBook = () => {
           <button 
             onClick={handlePrev} 
             disabled={currentIndex === 0} 
-            className="text-white bg-blue-500 px-4 py-2 rounded-full disabled:bg-gray-300"
+            className="text-white bg-blue-500 px-4 py-2 rounded-full disabled:bg-gray-300 enabled:cursor-pointer"
           >
             ⬅️
           </button>
@@ -138,7 +138,7 @@ const RecipeBook = () => {
           <button 
             onClick={handleNext} 
             disabled={currentIndex === visibleRecipes.length - 1} 
-            className="text-white bg-blue-500 px-4 py-2 rounded-full disabled:bg-gray-300"
+            className="text-white bg-blue-500 px-4 py-2 rounded-full disabled:bg-gray-300 enabled:cursor-pointer"
           >
             ➡️
           </button>
