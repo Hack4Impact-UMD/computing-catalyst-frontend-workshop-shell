@@ -15,38 +15,45 @@ const DishDisplay: React.FC<DishDisplayProps> = ({ open, handleClose, recipe }) 
     return (
         <Dialog open={open} onClose={handleClose}> 
             <div className="w-[40vw] bg-gray-100 p-6 rounded-md">
-                {/* Close button - already complete */}
                 <IconButton onClick={handleClose} className="absolute left-2 top-2">
                     <CloseIcon />
                 </IconButton>
 
-                {/* TODO: Display recipe name as h2 heading */}
+                {/* TASK 4: */
+                    /*
+                        a) In the code block below this, please display the recipe name in an h2 element.
+                           With className="text-2xl font-semibold text-center"
+                        b) In the code block within the <div>, please display the recipe image. Hint the 
+                           image source (src) can be found in the recipe's imageUrl property.
+                    */
+                }
                 {/* YOUR CODE HERE */}
-
-                {/* TODO: Display recipe image 
-                    Hint: Use recipe.imageURL and recipe.name
-                    The image should be centered and styled
-                */}
                 <div className="mt-4 flex justify-center">
                     <div className="w-full max-w-[600px] h-64 flex items-center justify-center">
                         {/* YOUR CODE HERE */}
                     </div>
                 </div>
 
-                {/* TODO: Display recipe description */}
+                {/* TASK 5: */
+                    /*
+                        a) In the code block below this, please display the recipe description with
+                        className="mt-4 text-center"
+                        b) In the code block within the <div>, please display the recipe's cuisine,
+                        time needed, and skill level in separate paragraphs
+                    */
+                }
                 {/* YOUR CODE HERE */}
-
-                {/* TODO: Display recipe details (cuisine, time, skill level)
-                    Hint: Use <strong> tags for labels
-                */}
                 <div className="mt-6 space-y-2 text-sm">
                     {/* YOUR CODE HERE */}
                 </div>
 
-                {/* TODO: Display ingredients list
-                    Hint: Map through recipe.ingredients array
-                    Each ingredient has: name and quantity
-                */}
+                {/* TASK 6: */
+                    /*
+                      In the code block below this, please display the recipe’s ingredients using .map(). 
+                      For each ingredient, create an <li> that shows the ingredient’s name and quantity. 
+                      Use the second argument of .map() as the key for each <li>.
+                    */
+                }
                 <div className="mt-6">
                     <p className="font-semibold">Ingredients:</p>
                     <ul className="list-decimal ml-6">
@@ -54,10 +61,9 @@ const DishDisplay: React.FC<DishDisplayProps> = ({ open, handleClose, recipe }) 
                     </ul>
                 </div>
 
-                {/* TODO: Display cooking steps */}
                 <div className="mt-6">
                     <p className="text-xl font-semibold text-center mb-2">Steps</p>
-                    {/* YOUR CODE HERE */}
+                    <p className="text-sm text-gray-700 whitespace-pre-wrap">{recipe.steps}</p>
                 </div>
             </div>
         </Dialog>

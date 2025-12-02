@@ -46,7 +46,8 @@ const RecipeTable: React.FC<RecipeTableProps> = ({ recipes, onToggleFavorite, on
             </TableHead>
             <TableBody>
                 {/* TASK 2: */
-                    /*  create a TableRow for each recipe in the prop recipes (hint: use map())
+                    /*  
+                        create a TableRow for each recipe in the prop recipes (hint: use map())
                         TableRow should have the following props:
                         key={recipe.id} hover onClick={() => onSelectRecipe(recipe)
                     */
